@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+    console.log("Script principal carregado!"); // MENSAGEM PARA CONFIRMAR O CARREGAMENTO DO SCRIPT
+
     // Smooth Scroll para links de navegação
     document.querySelectorAll('a.scroll-link').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -89,8 +91,8 @@ document.addEventListener('DOMContentLoaded', () => {
         bubble.style.animationDelay = `${Math.random() * 5}s`; // Atraso para cada bolha
         bubblesContainer.appendChild(bubble);
     }
-});
-// Lógica do Validador de Formulário
+
+    // Lógica do Validador de Formulário (INCLUÍDA AQUI)
     const contactForm = document.getElementById('contactForm');
     const formName = document.getElementById('form-name');
     const formEmail = document.getElementById('form-email');
@@ -155,3 +157,4 @@ document.addEventListener('DOMContentLoaded', () => {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(email);
     }
+}); // Fim do DOMContentLoaded
